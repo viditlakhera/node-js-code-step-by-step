@@ -10,10 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/viditlakhera/node-js-code-step-by-step.git"
   },
+  "type":"module",
   "author": "vidit lakhera",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/viditlakhera/node-js-code-step-by-step/issues"
   },
-  "homepage": "https://github.com/viditlakhera/node-js-code-step-by-step#readme"
+  "homepage": "https://github.com/viditlakhera/node-js-code-step-by-step#readme",
+  "dependencies": {
+    "chalk": "^5.2.0"
+  }
 }
