@@ -1,8 +1,8 @@
 import http from 'http';
-import chalk from 'chalk';
+import users from './user.js';
 
 http.createServer((req,res)=>{
-console.log(chalk.blue("this is blue"))
-res.write(JSON.stringify({data:"hello welcome to node js course again"}));
-res.end();
-}).listen(4700);
+   res.writeHead(200,{"Content-Type":"application/json"});
+   res.write(JSON.stringify(users));
+   res.end();
+}).listen(8000);
