@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-code-step-by-step",
+  "version": "1.0.0",
+  "description": "a node js learning path",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viditlakhera/node-js-code-step-by-step.git"
+  },
+  "author": "vidit lakhera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viditlakhera/node-js-code-step-by-step/issues"
+  },
+  "homepage": "https://github.com/viditlakhera/node-js-code-step-by-step#readme"
+}
