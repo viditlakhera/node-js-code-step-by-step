@@ -1,5 +1,15 @@
-const http = require('http');
-http.createServer((req,res)=>{
-res.write(JSON.stringify({data:"hello welcome to node js course again"}));
-res.end();
-}).listen(4500);
+// 
+
+
+const express = require('express');
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.get("/",(req,res)=>{
+   res.send('Welcome, to home page');
+   res.end();
+})
+
+app.listen(PORT,()=>{
+   console.log(`port is running on ${PORT}`)
+})
