@@ -1,5 +1,10 @@
-const http = require('http');
-http.createServer((req,res)=>{
-res.write(JSON.stringify({data:"hello welcome to node js course again"}));
-res.end();
-}).listen(4500);
+const express = require("express");
+const path = require('path');
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.use(express.static(path.join(__dirname,"public")));
+
+app.listen(PORT, () => {
+  console.log(`PORT is running on ${PORT}`);
+});
