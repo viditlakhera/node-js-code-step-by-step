@@ -1,5 +1,13 @@
-const http = require('http');
-http.createServer((req,res)=>{
-res.write(JSON.stringify({data:"hello welcome to node js course again"}));
-res.end();
-}).listen(4500);
+const express = require('express');
+const ejs = require('ejs');
+const app = express();
+const PORT = 3000 || process.env.PORT;
+
+app.set('view engine','ejs');
+app.get('/',(req,res)=>{
+   res.render('index')
+});
+
+app.listen(PORT,()=>{
+   console.log(`server is running on port ${PORT}`)
+});
